@@ -266,7 +266,7 @@ textarea {
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
+    grid-gap: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
@@ -278,15 +278,27 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
           font-size: 2.4rem; } }
-    .about__content-image {
-      max-width: 30rem;
-      padding: 2rem;
-    }
     .about__content-details-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-gap: 2.5rem;
+      text-align: justify;
     }
-    @media only screen and (max-width: 56.25em) {
+    .about__content-image {
+      width: 100%;
+      padding: 2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about__btn {
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    @media only screen and (max-width: 35.5em) {
       .about__content-details-col {
         grid-template-columns: 1fr;} }
     .about__content-details-para {
