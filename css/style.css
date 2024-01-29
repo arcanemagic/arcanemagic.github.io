@@ -491,6 +491,9 @@ textarea {
 
 .project-details__showcase-img-cont {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 6rem; }
 
 .project-details__showcase-img {
