@@ -99,17 +99,15 @@ https://rammaheshwari.com
 
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 1</h1>
+        <h1 class="heading-primary">FPGA Drummer</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Drum machine that can store and loop up to four drum tracks that can be programmed by a user. Built on the Digilent Basys3 platform.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="./#projects" class="btn btn--bg btn--theme">Projects</a>
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="./#projects" class="btn btn--bg btn--theme"><i class="fa-solid fa-arrow-left-long"></i> Projects</a>
+          <a href="https://www.youtube.com/watch?v=pJIF3Tshsb0" class="btn btn--bg" target="_blank"><i class="fa-brands fa-youtube"></i> Demo</a>
         </div>
       </div>
     </section>
@@ -118,68 +116,47 @@ https://rammaheshwari.com
       <div class="main-container">
         <div class="project-details__content">
 
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
-          </div>
-
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
 
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                The system is programmed in Verilog, and uses an external PmodAMP2 module in order to connect to and play from a speaker. Each track is programmed using a series of 16 switches that are physically on the board. Tracks are able to be switched using pushbuttons, and the each track can be paused and reset at will. The seven-segment display on the board indicates which track the user is currently editing.
               </p>
-              
+
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The project accomplishes this functionality by having a series of clock dividers that can create internal clocks for each possible frequency output on a beat, deriving them from the internal 100MHz clock. The demo below shows an example of setting up four tracks, building them up one by one and then layering them on top of each other, after which it shows how tracks can be edited in-place while they are still playing.
               </p>
             </div>
-            
+          
+            <div class="embed-container">
+              <iframe src="https://www.youtube.com/embed/pJIF3Tshsb0?si=rBvVxyq4gTFqRWL1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Verilog</div>
+                <div class="skills__skill">System Verilog</div>
+                <div class="skills__skill">FPGA</div>
+                <div class="skills__skill">Digital Design</div>
+                <div class="skills__skill">Embedded Systems</div>
               </div>
             </div>
 
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">See Demo</h3>
               <a
-                href="#"
+                href="https://www.youtube.com/watch?v=pJIF3Tshsb0"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
+                ><i class="fa-brands fa-youtube"></i> Demo</a
               >
               <a
-                href="#"
+                href="/assets/pdf/FPGA_Drummer.pdf"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                ><i class="fa-solid fa-file-lines"></i> Report</a
               >
             </div>
           </div>
