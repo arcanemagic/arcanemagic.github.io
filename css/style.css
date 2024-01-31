@@ -496,6 +496,12 @@ textarea {
   align-items: center;
   margin-bottom: 6rem; }
 
+@media (max-width: 768px) {
+  .project-details__showcase-img-cont {
+    height: auto; /* Reset height for smaller screens */
+    flex-direction: column; } 
+  }
+
 .embed-container { 
   position: relative;
   padding-bottom: 56.25%;
@@ -512,7 +518,17 @@ textarea {
   height: 100%; }
 
 .project-details__showcase-img {
-  width: 100%; }
+  width: 100%; 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-height: 450px; }
+
+  @media (max-width: 768px) {
+    .project-details__showcase-img {
+      width: 100%;
+      max-height: 1500px; /* Reset height for smaller screens */
+    }
+}
 
 .project-details__content-main {
   width: 100%;
